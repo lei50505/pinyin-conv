@@ -43,10 +43,6 @@ namespace PinYinConv
         {
             ListBoxAnswer.Items.Clear();
             string str = TextBoxCh.Text;
-            if (string.IsNullOrWhiteSpace(str))
-            {
-                return;
-            }
             string[] strs = PinYinUtils.strToFirst(str);
             foreach (string s in strs)
             {
@@ -58,10 +54,6 @@ namespace PinYinConv
         {
             ListBoxAnswer.Items.Clear();
             string str = TextBoxCh.Text;
-            if (string.IsNullOrWhiteSpace(str))
-            {
-                return;
-            }
             string[] strs = PinYinUtils.strToFull(str);
             foreach (string s in strs)
             {
